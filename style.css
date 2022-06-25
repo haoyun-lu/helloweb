@@ -1,0 +1,116 @@
+/* color    red = rgb(255, 0, 0) = #ff0000
+            green = rgb(0, 255, 0) = #00ff00
+            blue = rgb(0, 0, 255) = #0000ff
+            black = rgb(0, 0, 0) = #000000
+            white = rgb(255, 255, 255) = #ffffff*/
+
+/* selector :one colon for (pseudo class) 
+    selector :: two coloms for (pseudo elements)*/
+
+/* . stands for class; # stands for id */
+
+/* specificity, styple will be adopted from a more specfic element:  id > class/pseudo class > element/pseudo element*/
+
+body {
+    background-color: #fafaee;
+}
+
+.工具>div{
+    width: 300px;
+    height: 200px;
+    border-color:beige;
+    border-width:2px;
+    border-style:solid;
+    /* box-sizing: border-box; */
+    /* simply way -> border = size style color */
+    border-radius: 10%;
+    text-align:left;
+    padding: 10px;
+    margin:10px;
+}
+.工具>div:nth-last-of-type(2n) {
+    background-color: #e3e3d7;
+}
+
+::selection {
+    background-color: orange;
+}
+
+h1 {
+    color: goldenrod;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: pink underline;
+    letter-spacing: 10px;
+    font-size: 60px;
+    font-family: fantasy;
+}
+
+h2 {
+    color: lightcoral;
+    text-decoration: #a59977 underline;
+    /* how bold it is -> font-weight */
+    font-weight: 400;
+    /* how large it is -> font-weight */
+    font-size: 40px;
+}
+
+button {
+    /* background-color: darkslateblue; */
+    background-color: cornflowerblue;
+    padding: 3px;
+}
+
+button:hover {
+    background-color: red;
+    color: white;
+}
+
+button:active {
+    background-color: red;
+    color: black;
+}
+
+p {
+    /*行距  */
+    line-height: 1.5;
+}
+
+p::first-letter {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.tag {
+    background-color: blanchedalmond;
+}
+
+.link a {
+    text-decoration: none;
+}
+
+.link a:hover {
+    color: red;
+    background-color: gold;
+    text-decoration: red underline;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+/* id selector */
+.message {
+    background-color: red;
+    color: white;
+}
+
+
+
+
+input[type="radio"]:checked {
+    box-shadow: 0 0 0 1pt orange;
+}
+
+h3:nth-last-of-type(2n) {}

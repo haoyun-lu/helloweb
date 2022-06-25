@@ -1,0 +1,173 @@
+<!-- 
+    ctrl + / toggle comment
+    shift + ctrl + P  menu
+    shift + alt + F alt formatting
+    -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Love Story</title>
+    <!-- ccs style linked -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav>
+        <h1>Jiaoyang<br>
+            <!-- img没有结束符, alt在图片打不开的情况下显示alt中的内容-->
+            <img src="麦田.jpg" alt="麦田，娇阳的心在这">
+        </h1>
+    </nav>
+
+
+    <section class="link">
+        <a href="https://cn.bing.com/images/search?q=love&form=HDRSC2&first=1&tsc=ImageHoverTitle">I love you</a>
+        <h2>恋爱事迹</h2>
+
+        <ul>
+            <li>陪伴</li>
+            <li>理解</li>
+            <li>共情</li>
+        </ul>
+
+    </section>
+    <section>
+        <h2>Little Poetry</h2>
+        <p>
+            <span class="tag">Lorem</span> ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p>
+            Ptio quod sunt sapiente aperiam eius quo expedita ipsum,
+        </p>
+        <p>
+            Elicabo id neque nihil deserunt quisquam incidunt
+        </p>
+        </p>
+        <p>
+            <span class="tag">Distinctio</span>
+            Nemo cum fugiat similique vitae?
+        </p>
+    </section>
+    <section>
+        <h2>A Small Table</h2>
+
+        <table>
+            <thead>
+                <th>Subscription</th>
+                <th>Price</th>
+                <th>Support</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Free</td>
+                    <td>Free</td>
+                    <td>N/A </td>
+                </tr>
+                <tr>
+                    <td>Personal</td>
+                    <td> $9.99 </td>
+                    <td>Weekdays </td>
+
+                </tr>
+
+                <tr>
+                    <td>Business</td>
+                    <td> $49.99 </td>
+                    <td>24/7 </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <h2>想对我说的话</h2>
+        <form action="https://cn.bing.com/images/search">
+            <label for="message">请直抒胸臆</label>
+            <!-- 注意：input和img一样只有一个开头 -->
+            <input id='message' type="text" placeholder="最好是表达爱意的语句&hearts;" name="q" minlength="3" required><br>
+            <button class="message" type="submit">Magic Buttom!</button><br>
+        </form>
+    </section>
+    <section class="工具">
+        <h2>一些实用工具</h2>
+        <div>
+            <h3>检索</h3>
+            <form action="https://cn.bing.com/search">
+                <label for="search">请输入搜索内容</label>
+                <!-- name设置为q是因为bing q字符代表query，会搜索后面的内容 -->
+                <input id='search' type="text" placeholder="please type" name="q">
+                <button>Bing搜索</button>
+            </form>
+        </div>
+        <div>
+            <h3>数字</h3>
+            <form action="https://cn.bing.com/search">
+                <label for="number">输入一个数字</label>
+                <input id="number" type="number" placeholder="输入数字" name="q" required>
+                <button>Bing检索</button>
+            </form>
+        </div>
+        <div>
+            <h3>Text Search</h3>
+            <form action="https://youdao.com/result">
+                <label for="searchword">翻译单词</label>
+                <input id='searchword' type="text" placeholder="please type" name="word"><br>
+                <!-- 注意name是变量名，而value是这个变量的设定的值 name=value -->
+                <input id="英语" type="radio" name="lang" value='en'>
+                <label for="英语">English</label>
+                <input id="法语" type="radio" name="lang" value='fr'>
+                <label for="法语">French</label>
+                <input id="日语" type="radio" name="lang" value='ja'>
+                <label for="日语">Japanese</label>
+                <button>有道检索</button>
+            </form>
+        </div>
+        <div>
+            <h3>Checkbock</h3>
+            <form action="temp">
+                <input id="check" type="checkbox" checked>
+                <label for="check">我同意</label>
+                <button>Submit</button>
+            </form>
+        </div>
+        <div>
+            <h3>Radio Buttom</h3>
+            <form action="temp">
+                <div>
+                    <input id="multichoice1" type="radio" name="path" value='choice1'>
+                    <label for="multichoice1">choice1</label>
+                </div>
+                <div>
+                    <input id="multichoice2" type="radio" name="path" value='choice2'>
+                    <label for="multichoice2">choice2</label>
+                </div>
+                <div>
+                    <input id="multichoice3" type="radio" name="path" value='choice3'>
+                    <label for="multichoice3">choice3</label>
+                </div>
+                <button>Submit</button>
+            </form>
+        </div>
+        <div>
+            <h3>Select Bottom</h3>
+            <form action="likelikeyou">
+                <label for="悄悄话">请你对我说些悄悄话</label>
+                <select name="sentence" id="悄悄话">
+                    <option value=""> --请选择一个选项-- ></option>
+                    <option value="like" selected>我喜欢你 </option>
+                    <option value="secret">这是个秘密 </option>
+                    <option value="work">我工作太忙啦 </option>
+                </select>
+                <button>选择好啦</button>
+            </form>
+
+        </div>
+    </section>
+    <p>
+        <span>&copy; Haoyun Lu</span>
+    </p>
+    <script src="alpha.js"> </script>
+</body>
+
+</html>
